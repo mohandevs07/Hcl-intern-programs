@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Read image
-image = cv2.imread("images/industrial.jpg")
+image = cv2.imread(r"images/industrial.jpg")
 
 if image is None:
     raise FileNotFoundError("Image not found.")
