@@ -12,3 +12,11 @@ pandas
 scikit-learn
 tensorflow
 
+
+numpy
+matplotlib
+pandas
+scikit-learn
+tensorflow
+opencv-contrib-python
+ultralytics

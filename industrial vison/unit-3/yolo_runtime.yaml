@@ -1,0 +1,5 @@
+path: C:\Users\Mohan ral\Documents\Hcl-intern-programs\industrial vison\unit-3\dataset\yolo
+train: images/train
+val: images/val
+names:
+  0: defect
