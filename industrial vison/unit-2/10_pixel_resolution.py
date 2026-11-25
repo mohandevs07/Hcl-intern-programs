@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("../images/industrial.jpg")
+image = cv2.imread(r"../images/industrial.jpg")
 
 reference_width_mm = 100
 reference_width_pixels = 500

@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-image = cv2.imread("../images/industrial.jpg")
+image = cv2.imread(r"../images/industrial.jpg")
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)

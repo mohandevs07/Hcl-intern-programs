@@ -3,3 +3,12 @@ numpy
 matplotlib
 pandas
 scikit-learn
+
+
+opencv-python
+numpy
+matplotlib
+pandas
+scikit-learn
+tensorflow
+

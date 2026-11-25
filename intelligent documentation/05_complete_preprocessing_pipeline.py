@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
 # 1. Create raw dataset
@@ -71,11 +71,15 @@ print(df)
 
 # 4. One-Hot Encoding
 
+one_hot = OneHotEncoder()
 
-df = pd.get_dummies(
-    df,
-    columns=["City"],
-    dtype=int
+var = one_hot.fit_transform(
+    df[["City"]]
+).toarray()
+
+var_df = pd.DataFrame(
+    var,
+    columns=one_hot.get_feature_names_out(["City"])
 )
 
 print("\n===== AFTER ENCODING =====")
